@@ -1,0 +1,146 @@
+body {
+    background:#f2f2f2;
+}
+
+#banner {
+    background:white;
+    margin: auto;
+    width: 70%;
+    padding: 20px;
+    overflow:auto;
+    vertical-align: middle;
+    border: double 4px #008CBA;
+    border-radius: 10px;
+}
+#main {
+    background:white;
+    margin: auto;
+    width: 70%;
+    padding: 20px;
+    float: center;
+    font-size:20px;
+    border: double 4px #008CBA;
+    border-radius: 10px;
+    text-align:center;
+}
+
+#info {
+    float:right;
+    text-align:right;
+    font-weight: bold;
+}
+
+#big-img {
+    max-width:100%;
+    max-height:700px;
+    border-radius: 10px;
+}
+
+input {
+    width:95%;
+    padding:10px;
+    box-sizing:border-box;
+    border:solid 1px gray;
+    border-radius: 5px;
+    font-size:15px;
+}
+
+input:focus {
+    border:solid 1px #008CBA;
+    outline:none;
+}
+
+input:hover {
+    outline:none;
+}
+
+input:hover:not(:focus) {
+    border:solid 1px black;
+}
+
+/*
+input:invalid {
+    border:solid 1px red;
+}
+*/
+
+#formA {
+    float:left;
+    width:50%;
+    text-align:left;
+}
+
+#formB {
+    float:right;
+    width:50%;
+    text-align:left;
+}
+
+span[title=required] {
+    color:red;
+}
+
+#icon {
+    float:left;
+    -webkit-text-stroke: 1px #008CBA;
+}
+
+#company-info {
+    clear:both;
+    margin:60px;
+}
+
+#submit-form {
+    padding:10px;
+    box-sizing:border-box;
+    border: solid #008CBA 1px;
+    background:white;
+    font-size:20px;
+    border-radius: 10px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+#submit-form:hover {
+    background:#008CBA;
+    color: white;
+}
+
+#mobile-friendly-br {
+    display:none;
+}
+
+@media only screen and (max-width: 700px) {
+    #icon {
+        float:none;
+        text-align: center;
+        font-size:30px;
+    }
+    #company-info {
+        margin:5px;
+    }
+    #info {
+        float:none;
+        text-align: center;
+    }
+    #main {
+        overflow:inherit;
+        box-sizing:border-box;
+        width:100%;
+    }
+    #banner {
+        box-sizing:border-box;
+        width:100%;
+    }
+    #formA {
+        float:none;
+        width:100%;
+    }
+    #mobile-friendly-br {
+        display:block;
+    }
+    #formB {
+        float:none;
+        width:100%;
+    }
+}
