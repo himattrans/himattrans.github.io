@@ -11,6 +11,23 @@
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
     </head>
     <body>
+ <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAj-kTEJyGAuwcuscQI90vl6a4zhTcUfwM",
+    authDomain: "collective-consciousness-4982d.firebaseapp.com",
+    databaseURL: "https://collective-consciousness-4982d.firebaseio.com",
+    projectId: "collective-consciousness-4982d",
+    storageBucket: "collective-consciousness-4982d.appspot.com",
+    messagingSenderId: "150238560985"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<script>
+    firebase.database().ref("data").push(location.search);
+</script>
         <noscript>
             <h1>
                 Please enable javascript in your browser to make this website work.
